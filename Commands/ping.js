@@ -9,7 +9,7 @@ module.exports = {
      */
     aliases: ['p'],
     slash: 'both',
-    callback: ({interaction, message}) => {
+    callback: ({interaction, message, client}) => {
 
           return `Pong! ${client.ws.ping}`
     }

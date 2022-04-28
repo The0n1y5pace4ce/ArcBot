@@ -1,4 +1,5 @@
-import mongoose, { Schema } from "mongoose";
+const mongoose = require('mongoose');
+const { Schema } = mongoose;
 
 const reqString = {
     type: String,
@@ -25,4 +26,4 @@ const schema = new Schema(
 
 const name = 'punishments'
 
-export default mongoose.models[name] || mongoose.model(name, schema, name)
+module.exports = mongoose.model(name, schema, name)
