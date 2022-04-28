@@ -38,6 +38,7 @@ client.on("ready", async () => {
   new WOKCommands(client, {
     commandsDir: path.join(__dirname, 'Commands'),
     featuresDir: path.join(__dirname, 'Events'),
+    mongoUri: config.clientSecret.mongodbUrl
   })
 });
 
